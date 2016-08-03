@@ -1,0 +1,75 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp"
+                  android:background="#282828"
+                  android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allocate Trip"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:text="Enter Trip Mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtTripMileage"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"
+            android:textColor="#002b1b"
+            />
+        <TextView
+            android:text="Mileage Reading Before Departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtDestination"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:background="#ffffffff"
+            android:textColor="#002b1b"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAllocate"
+            android:text="Allocate"
+            android:onClick="onSignUp"
+            android:background="#3ad7da"/>
+
+
+    </LinearLayout>
+</ScrollView>

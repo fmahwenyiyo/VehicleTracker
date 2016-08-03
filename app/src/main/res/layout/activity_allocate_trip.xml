@@ -1,0 +1,167 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp"
+                  android:background="#282828"
+                  android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allocate Trip"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:text="Enter Plate Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtPlateNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"
+            android:textColor="#002b1b"
+            />
+        <TextView
+            android:text="Destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtDestination"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:background="#ffffffff"
+            android:textColor="#002b1b"
+            />
+
+
+        <TextView
+            android:text="Driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtEngineNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#002b1b"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+
+        <TextView
+            android:text="Distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtTonnage"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+
+        <TextView
+            android:text="Is there return journey ? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:id="@+id/genderId"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rgAnswers"
+            >
+            <RadioButton
+                android:text="Yes" android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"/>
+            <RadioButton
+                android:text="No" android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"/>
+
+        </RadioGroup>
+        <TextView
+            android:text="Fuel Required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtVehicleClass"
+            android:layout_marginBottom="10dp"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Total Distance Expected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtVehicleType"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAllocate"
+            android:text="Allocate"
+            android:onClick="onSignUp"
+            android:background="#3ad7da"/>
+
+
+    </LinearLayout>
+</ScrollView>

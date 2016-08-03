@@ -1,0 +1,188 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp"
+                  android:background="#282828"
+                  android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Vehicle"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:text="Enter Plate Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtPlateNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"
+            android:textColor="#002b1b"
+            />
+        <TextView
+            android:text="Chess Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtChessNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:background="#ffffffff"
+            android:textColor="#002b1b"
+            />
+
+
+        <TextView
+            android:text="Engine Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:id="@+id/txtEngineNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#002b1b"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+
+        <TextView
+            android:text="Tonnage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtTonnage"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtMake"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtColor"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Fuel Consumption per Kilometre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtFuelConsumption"
+            android:textColor="#002b1b"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Vehicle Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtVehicleClass"
+            android:layout_marginBottom="10dp"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+        <TextView
+            android:text="Vehicle Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtVehicleType"
+            android:textColor="#002b1b"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffffff"
+            android:layout_weight="0.08"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bregister"
+            android:text="Register"
+            android:onClick="onSignUp"
+            android:background="#3ad7da"/>
+
+
+    </LinearLayout>
+</ScrollView>
